@@ -1,2 +1,2 @@
 # Diminutivecoin
-![header image](https://i.imgur.com/9mCYnDI.png)
+![image](https://i.imgur.com/9mCYnDI.png)
