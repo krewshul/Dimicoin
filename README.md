@@ -6,9 +6,8 @@
 # Algo : Sha256
 # Blocktime : 90 Sec
 # Chain Retarget : 270 sec
-# Stake per Year :  15%
-# Min Stake age : 5 days 
+# Stake per Year :  20%
+# Min Stake age : 2 days 
 # Coinbase Maturity : 100 
-# Min Tx fee 0.00000250 : * This is to allow easier movement for miner pools * 
-# Max Coin Supply 10 000 DIMI 
-# Reworked Wallet Dialog
+# Min Tx fee 0.00005000 : * This is to allow easier movement for miner pools * 
+
