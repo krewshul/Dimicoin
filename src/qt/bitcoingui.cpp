@@ -1031,7 +1031,7 @@ void BitcoinGUI::updateStakingIcon()
         nNetworkWeight /= COIN;
 
         labelStakingIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/staking_on" : ":/icons/staking_on").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelStakingIcon->setToolTip(tr("three days required - staking active.<br>your current coin weight is %1<br> vs the current network weight is %2<br> expected proof of stake time to earn reward is %3").arg(nWeight).arg(nNetworkWeight).arg(text));
+        labelStakingIcon->setToolTip(tr("two days required - staking active.<br>your current coin weight is %1<br> vs the current network weight is %2<br> expected proof of stake time to earn reward is %3").arg(nWeight).arg(nNetworkWeight).arg(text));
     }
     else
     {
@@ -1043,7 +1043,7 @@ void BitcoinGUI::updateStakingIcon()
         else if (IsInitialBlockDownload())
             labelStakingIcon->setToolTip(tr("out of sync - not staking because wallet is syncing"));
         else if (!nWeight)
-            labelStakingIcon->setToolTip(tr("three days required - not staking because you don't have mature coins - Please Keep Wallet Unlocked"));
+            labelStakingIcon->setToolTip(tr("two days required - not staking because you don't have mature coins - Please Keep Wallet Unlocked"));
         else
             labelStakingIcon->setToolTip(tr("Not staking"));
     }
