@@ -4,7 +4,7 @@
 
 USE_UPNP:=0
 USE_WALLET:=1
-
+#Below is wrong and outdated - Fix Please 
 INCLUDEPATHS= \
  -I"C:\boost-1.50.0-mgw" \
  -I"C:\db-4.8.30.NC-mgw\build_unix" \
