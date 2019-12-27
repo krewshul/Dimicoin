@@ -80,8 +80,8 @@ public:
 
 
 
-        vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));             // seed 1
-	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));             // seed 2
+        vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));   // Connection Main 1 
+	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));    // Connection Main 2
 
 
        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
@@ -92,7 +92,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        nLastPOWBlock = 8500000;
+        nLastPOWBlock = 8500000;   // Last Mineable block 
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -139,8 +139,8 @@ public:
 
 assert(hashGenesisBlock == uint256("0x5a31658bcca40965f5381cea7b8211df68d862c5e0b727b9799b3bd79d564e17"));
 
- vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));             // seed 1
-	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));             // seed 2
+ vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));   // Connection Main 1 
+	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));    // Connection Main 2
 
 
       base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 111);
