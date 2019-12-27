@@ -1001,7 +1001,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     }
         else if(pindexBest->nHeight+1 >= 8  && pindexBest->nHeight+1 <= 9)
     {
-        nSubsidy = 5060  * COIN;  // Total Coins mined 30k
+        nSubsidy = 5100  * COIN;  // Total Coins mined 10200 DIMI Mined 126.31218387 on previous chain that stalled 
     
        
     }
