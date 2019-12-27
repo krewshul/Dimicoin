@@ -8,8 +8,8 @@
 ## Blocktime : 120 Sec
 ## Drift Time : 10 Minutes
 ## Address letter: D
-## Rpc Port : 15001 
-## P2p Port : 15000
+## Rpc Port : 8501 
+## P2p Port : 8500
 ## Stake per Year :  20%
 ## Min Stake age : 2 days 
 ## Coinbase Mining Maturity : 80 Blocks
