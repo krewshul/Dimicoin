@@ -18,6 +18,7 @@ BitcoinAmountField::BitcoinAmountField(QWidget *parent):
     amount->setDecimals(8);
     amount->installEventFilter(this);
     amount->setMaximumWidth(170);
+        // Set SingleStep to 0.000005 instead of 0.0001
     amount->setSingleStep(0.000005);
 
     QHBoxLayout *layout = new QHBoxLayout(this);
