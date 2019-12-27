@@ -1,0 +1,26 @@
+src/*.exe
+src/diminutive
+src/diminutived
+src/test_diminutive
+src/build.h
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.diminutive
+#compilation and Qt preprocessor part
+*.qm
+Makefile
+diminutive-qt
+#resources cpp
+qrc_*.cpp
+#qt creator
+*.pro.user
+#mac specific
+.DS_Store
+build
+
+!src/leveldb/Makefile
