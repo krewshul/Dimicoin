@@ -53,8 +53,8 @@ public:
         pchMessageStart[2] = 0x1a;
         pchMessageStart[3] = 0x6d;
         vAlertPubKey = ParseHex("049d754d07e4ebaab5f1a52cec6c376f2bc3d3d0fa997528d2757afac9260aa29dcb60bb274a511477f263c722080794c848df46fcf59d7090e5b4553a2183468f");
-        nDefaultPort = 8550;
-        nRPCPort = 8551;
+        nDefaultPort = 18550;
+        nRPCPort = 18551;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
 
         const char* pszTimestamp = "THE BIRTH OFF DIMINUTIVE COIN 20191223";
