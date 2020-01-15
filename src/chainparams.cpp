@@ -53,8 +53,8 @@ public:
         pchMessageStart[2] = 0x1a;
         pchMessageStart[3] = 0x6d;
         vAlertPubKey = ParseHex("049d754d07e4ebaab5f1a52cec6c376f2bc3d3d0fa997528d2757afac9260aa29dcb60bb274a511477f263c722080794c848df46fcf59d7090e5b4553a2183468f");
-        nDefaultPort = 8500;
-        nRPCPort = 8501;
+        nDefaultPort = 18550;
+        nRPCPort = 18551;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
 
         const char* pszTimestamp = "THE BIRTH OFF DIMINUTIVE COIN 20191223";
@@ -82,6 +82,7 @@ public:
 
         vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));   // Connection Main 1 
 	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));    // Connection Main 2
+	
 
 
        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
@@ -124,8 +125,8 @@ public:
         pchMessageStart[3] = 0x5f;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         vAlertPubKey = ParseHex("044f5f2b6f089f344e914721a0b986d095e436c06535e2a83604feb0e3bb892fe64884a98fdb73178b7aa73e44c1401428d54c9a4c34d1001bc6c27d488f19b6c4");
-        nDefaultPort = 18500;
-        nRPCPort = 18501;
+        nDefaultPort = 18550;
+        nRPCPort = 18551;
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.

@@ -1027,19 +1027,19 @@ void BitcoinGUI::updateStakingIcon()
         nNetworkWeight /= COIN;
 
         labelStakingIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/staking_on" : ":/icons/staking_on").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-        labelStakingIcon->setToolTip(tr("two days required - staking active.<br>your current coin weight is %1<br> vs the current network weight is %2<br> expected proof of stake time to earn reward is %3").arg(nWeight).arg(nNetworkWeight).arg(text));
+        labelStakingIcon->setToolTip(tr("One day required - staking active.<br>your current coin weight is %1<br> vs the current network weight is %2<br> expected proof of stake time to earn reward is %3").arg(nWeight).arg(nNetworkWeight).arg(text));
     }
     else
     {
         labelStakingIcon->setPixmap(QIcon(fUseBlackTheme ? ":/icons/black/staking_off" : ":/icons/staking_off").pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
         if (pwalletMain && pwalletMain->IsLocked())
-            labelStakingIcon->setToolTip(tr("Not staking because wallet is locked - ensure the Wallet is in unlock state"));
+            labelStakingIcon->setToolTip(tr("Not staking because wallet is locked - Ensure the Wallet is in unlock state"));
         else if (vNodes.empty())
-            labelStakingIcon->setToolTip(tr("Check internet connection - not staking because wallet is offline"));
+            labelStakingIcon->setToolTip(tr("Check internet connection - Not staking because wallet is offline"));
         else if (IsInitialBlockDownload())
-            labelStakingIcon->setToolTip(tr("Out of sync - not staking because wallet is syncing"));
+            labelStakingIcon->setToolTip(tr("Out of sync - Not staking because wallet is syncing"));
         else if (!nWeight)
-            labelStakingIcon->setToolTip(tr("Two days required - not staking because you don't have mature coins - Please Keep Wallet Unlocked"));
+            labelStakingIcon->setToolTip(tr("One day required - Not staking because you don't have mature coins yet - Please Keep Wallet Unlocked"));
         else
             labelStakingIcon->setToolTip(tr("Not staking"));
     }

@@ -41,7 +41,7 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 48);
 
-unsigned int nStakeMinAge = 2 * 60 * 60 * 24; // 2 Days
+unsigned int nStakeMinAge = 1 * 60 * 60 * 24; // 1 Days
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 80;
@@ -1000,41 +1000,45 @@ int64_t GetProofOfWorkReward(int64_t nFees)
  
     }
         else if(pindexBest->nHeight+1 >= 8  && pindexBest->nHeight+1 <= 9)
-    {
+    	{
         nSubsidy = 5100  * COIN;  // Total Coins mined 10200 DIMI Mined 126.31218387 on previous chain that stalled 
+    	}
     
-       
-    }
-        else if(pindexBest->nHeight+1 >= 10  && pindexBest->nHeight+1 <= 1000000)
-    {
-        nSubsidy = 0.040  * COIN;  // Total Coins mined 30k
-    
-       }
-        else if(pindexBest->nHeight+1 >= 1000001  && pindexBest->nHeight+1 <= 2000000)
-    {
-        nSubsidy = 0.035  * COIN; // Total Coins mined 25k
-    }
+        else if(pindexBest->nHeight+1 >= 10  && pindexBest->nHeight+1 <= 2000)
+   
+	{
+        nSubsidy = 0.040  * COIN;  // Total Coins mined 76 DIMI new chain chain v2 now active
+	}
+        else if(pindexBest->nHeight+1 >= 2001  && pindexBest->nHeight+1 <= 1000000)
+ 	
+    	{
+        nSubsidy = 0.0133333  * COIN;  // Total Coins mined 30k chain v2 20200115 below 
+       	}
+   
+	 else if(pindexBest->nHeight+1 >= 1000001  && pindexBest->nHeight+1 <= 2000000)
+    	{
+        nSubsidy = 0.0116666 * COIN; // Total Coins mined 25k
+    	}
           
         else if(pindexBest->nHeight+1 >= 2000001  && pindexBest->nHeight+1 <= 4000000)
-    {
-        nSubsidy = 0.030  * COIN; // Total Coins mined 30k
-    }
+    	{
+        nSubsidy = 0.010  * COIN; // Total Coins mined 30k
+    	}
 
-  
-        else if(pindexBest->nHeight+1 >= 4000001  && pindexBest->nHeight+1 <= 6000000)
-    {
-        nSubsidy = 0.025 * COIN; // Total Coins mined 25k
-    }
+   	else if(pindexBest->nHeight+1 >= 4000001  && pindexBest->nHeight+1 <= 6000000)
+    	{
+        nSubsidy = 0.0833333 * COIN; // Total Coins mined 25k
+    	}
 
         else if(pindexBest->nHeight+1 >= 6000001  && pindexBest->nHeight+1 <= 10000000)
-    {
-        nSubsidy = 0.020  * COIN; // Total Coins mined 20k
-    }
+    	{
+        nSubsidy = 0.0666666  * COIN; // Total Coins mined 20k
+    	}
 
         else if(pindexBest->nHeight+1 >= 10000001)
-    {
-        nSubsidy = 0.015 * COIN; // Remainder to be mined 
-    }
+    	{
+        nSubsidy = 0.005 * COIN; // Remainder to be mined 
+    	}
 
     LogPrint("creation", "GetProofOfWorkReward() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
 
@@ -1053,7 +1057,7 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
   return nSubsidy + nFees;
 }
 
-static const int64_t nTargetTimespan = 10 * 60;  // 10 mins
+static const int64_t nTargetTimespan = 3 * 60 * 60;  // 180 mins or 3 hour Retarget  
 
 // ppcoin: find last block index up to pindex
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
