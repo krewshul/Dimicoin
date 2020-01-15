@@ -1175,7 +1175,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+3"/>
         <source>Map port using &amp;UPnP</source>
-        <translation>Portları &amp;UPnP kuldiminutiverak haritala</translation>
+        <translation>Portları &amp;UPnP kuldiminutivevaultrak haritala</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -1245,7 +1245,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Diminutive.</source>
-        <translation>Kullanıcı arabirimi dili buradan ayardiminutivebilir. Ayar, Diminutive yeniden başlatıldığında etkin olacaktır.</translation>
+        <translation>Kullanıcı arabirimi dili buradan ayardiminutivevaultbilir. Ayar, Diminutive yeniden başlatıldığında etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1404,7 +1404,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start diminutive: click-to-pay handler</source>
+        <source>Cannot start diminutivevault: click-to-pay handler</source>
         <translation>Diminutive: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
     </message>
 </context>
@@ -1997,7 +1997,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Mesajın imzadiminutivecağı adres (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation>Mesajın imzadiminutivevaultcağı adres (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2675,8 +2675,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or diminutived</source>
-        <translation>-sunucu veya diminutived&apos;ye komut gönder</translation>
+        <source>Send command to -server or diminutivevaultd</source>
+        <translation>-sunucu veya diminutivevaultd&apos;ye komut gönder</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2695,13 +2695,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: diminutive.conf)</source>
-        <translation>Konfigürasyon dosyasını belirt (varsayılan: diminutive.conf)</translation>
+        <source>Specify configuration file (default: diminutivevault.conf)</source>
+        <translation>Konfigürasyon dosyasını belirt (varsayılan: diminutivevault.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: diminutived.pid)</source>
-        <translation>pid dosyasını belirt (varsayılan: diminutive.pid)</translation>
+        <source>Specify pid file (default: diminutivevaultd.pid)</source>
+        <translation>pid dosyasını belirt (varsayılan: diminutivevault.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2718,7 +2718,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2729,7 +2729,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Diminutive Alert&quot; admin@f
         <translation>%s, konfigürasyon dosyasında bir rpcpassword belirlemelisiniz: 
 %s
 Aşağıdaki rastgele şifreyi kullanmanız tavsiye edilir:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (bu şifreyi hatırlamanız gerekmemektedir)
 Kullanıcı adı ve şifre aynı OLMAMALIDIR.
@@ -3256,7 +3256,7 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     <message>
         <location line="+124"/>
         <source>Unable to bind to %s on this computer. Diminutive is probably already running.</source>
-        <translation>Bu bilgisayarda %s bağdiminutivemadı. Diminutive muhtemelen halen çalışmaktadır.</translation>
+        <translation>Bu bilgisayarda %s bağdiminutivevaultmadı. Diminutive muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="-101"/>

@@ -51,7 +51,7 @@ AddressBookPage::AddressBookPage(Mode mode, Tabs tab, QWidget *parent) :
     switch(tab)
     {
     case SendingTab:
-        ui->labelExpdiminutivetion->setVisible(false);
+        ui->labelExpdiminutivevaulttion->setVisible(false);
         ui->deleteButton->setVisible(true);
         ui->signMessage->setVisible(false);
         break;

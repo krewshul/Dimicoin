@@ -27,3 +27,4 @@
 ## 0.0083DMI 4 000 001 - 6 000 000      25 000 DIMI Produced
 ## 0.0066DMI 6 000 001 - 10 000 000     20 000 DIMI Produced
 ## 0.005DMI 10 000 001 - 87 000 000    Until  Max Coin Reached
+

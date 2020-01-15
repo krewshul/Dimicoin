@@ -52,10 +52,10 @@ bool AppInit(int argc, char* argv[])
             // First part of help message is specific to bitcoind / RPC client
             std::string strUsage = _("Diminutive version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  diminutived [options]                     " + "\n" +
-                  "  diminutived [options] <command> [params]  " + _("Send command to -server or diminutived") + "\n" +
-                  "  diminutived [options] help                " + _("List commands") + "\n" +
-                  "  diminutived [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  diminutivevaultd [options]                     " + "\n" +
+                  "  diminutivevaultd [options] <command> [params]  " + _("Send command to -server or diminutivevaultd") + "\n" +
+                  "  diminutivevaultd [options] help                " + _("List commands") + "\n" +
+                  "  diminutivevaultd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "diminutive:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "diminutivevault:"))
                 fCommandLine = true;
 
         if (fCommandLine)

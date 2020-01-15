@@ -1381,7 +1381,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start diminutive: click-to-pay handler</source>
+        <source>Cannot start diminutivevault: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2652,7 +2652,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or diminutived</source>
+        <source>Send command to -server or diminutivevaultd</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2672,12 +2672,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: diminutive.conf)</source>
+        <source>Specify configuration file (default: diminutivevault.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: diminutived.pid)</source>
+        <source>Specify pid file (default: diminutivevaultd.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2695,7 +2695,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

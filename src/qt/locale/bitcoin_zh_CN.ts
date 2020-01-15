@@ -1397,7 +1397,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start diminutive: click-to-pay handler</source>
+        <source>Cannot start diminutivevault: click-to-pay handler</source>
         <translation>无法启动黑币: 点击支付处理器</translation>
     </message>
 </context>
@@ -2668,8 +2668,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or diminutived</source>
-        <translation>向-server服务器或diminutived发送命令</translation>
+        <source>Send command to -server or diminutivevaultd</source>
+        <translation>向-server服务器或diminutivevaultd发送命令</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2691,13 +2691,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: diminutive.conf)</source>
-        <translation>指定配置文件(默认: diminutive.conf)</translation>
+        <source>Specify configuration file (default: diminutivevault.conf)</source>
+        <translation>指定配置文件(默认: diminutivevault.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: diminutived.pid)</source>
-        <translation>指定pid文件(默认: diminutived.pid)</translation>
+        <source>Specify pid file (default: diminutivevaultd.pid)</source>
+        <translation>指定pid文件(默认: diminutivevaultd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2715,7 +2715,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2726,7 +2726,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Diminutive Alert&quot; admin@f
         <translation>%s, 必须在配置文件里设置rpc密码:
  %s
 建议使用如下的随机密码:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (不需要记住该密码)
 用户名和密码不能重复。

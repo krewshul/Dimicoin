@@ -89,7 +89,7 @@ void Shutdown()
     TRY_LOCK(cs_Shutdown, lockShutdown);
     if (!lockShutdown) return;
 
-    RenameThread("diminutive-shutoff");
+    RenameThread("diminutivevault-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopRPCThreads();
 #ifdef ENABLE_WALLET
@@ -160,8 +160,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n";
     strUsage += "  -?                     " + _("This help message") + "\n";
-    strUsage += "  -conf=<file>           " + _("Specify configuration file (default: diminutive.conf)") + "\n";
-    strUsage += "  -pid=<file>            " + _("Specify pid file (default: diminutived.pid)") + "\n";
+    strUsage += "  -conf=<file>           " + _("Specify configuration file (default: diminutivevault.conf)") + "\n";
+    strUsage += "  -pid=<file>            " + _("Specify pid file (default: diminutivevaultd.pid)") + "\n";
     strUsage += "  -datadir=<dir>         " + _("Specify data directory") + "\n";
     strUsage += "  -wallet=<dir>          " + _("Specify wallet file (within data directory)") + "\n";
     strUsage += "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 25)") + "\n";

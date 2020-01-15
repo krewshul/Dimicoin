@@ -918,7 +918,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "diminutive";
+    const char* pszModule = "diminutivevault";
 #endif
     if (pex)
         return strprintf(
@@ -951,7 +951,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\Diminutive
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\Diminutive
     // Mac: ~/Library/Application Support/Diminutive
-    // Unix: ~/.diminutive
+    // Unix: ~/.diminutivevault
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Diminutive";
@@ -969,7 +969,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Diminutive";
 #else
     // Unix
-    return pathRet / ".diminutive";
+    return pathRet / ".diminutivevault";
 #endif
 #endif
 }
@@ -1018,7 +1018,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "diminutive.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "diminutivevault.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1051,7 +1051,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "diminutived.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "diminutivevaultd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

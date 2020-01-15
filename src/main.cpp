@@ -41,10 +41,10 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 48);
 
-unsigned int nStakeMinAge = 1 * 60 * 60 * 24; // 1 Days
+unsigned int nStakeMinAge = 1 * 60 * 60 * 24; // 1 Day stake
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 110;
+int nCoinbaseMaturity = 95;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -1001,23 +1001,19 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     }
         else if(pindexBest->nHeight+1 >= 8  && pindexBest->nHeight+1 <= 9)
     	{
-        nSubsidy = 5100  * COIN;  // Total Coins mined 10200 DIMI Mined 126.31218387 on previous chain that stalled 
+        nSubsidy = 5500  * COIN;  // Total Coins mined 11000 DIMI Mined 1000 on previous chain 
     	}
     
-        else if(pindexBest->nHeight+1 >= 10  && pindexBest->nHeight+1 <= 2000)
-   
-	{
-        nSubsidy = 0.040  * COIN;  // Total Coins mined 76 DIMI new chain chain v2 now active
-	}
-        else if(pindexBest->nHeight+1 >= 2001  && pindexBest->nHeight+1 <= 1000000)
+  
+        else if(pindexBest->nHeight+1 >= 10  && pindexBest->nHeight+1 <= 1000000)
  	
     	{
-        nSubsidy = 0.0133333  * COIN;  // Total Coins mined 30k chain v2 20200115 below 
+        nSubsidy = 0.013  * COIN;  // Total Coins mined 30k chain v2 20200115 below 
        	}
    
 	 else if(pindexBest->nHeight+1 >= 1000001  && pindexBest->nHeight+1 <= 2000000)
     	{
-        nSubsidy = 0.0116666 * COIN; // Total Coins mined 25k
+        nSubsidy = 0.011 * COIN; // Total Coins mined 25k
     	}
           
         else if(pindexBest->nHeight+1 >= 2000001  && pindexBest->nHeight+1 <= 4000000)
@@ -1027,12 +1023,12 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 
    	else if(pindexBest->nHeight+1 >= 4000001  && pindexBest->nHeight+1 <= 6000000)
     	{
-        nSubsidy = 0.0833333 * COIN; // Total Coins mined 25k
+        nSubsidy = 0.0083 * COIN; // Total Coins mined 25k
     	}
 
         else if(pindexBest->nHeight+1 >= 6000001  && pindexBest->nHeight+1 <= 10000000)
     	{
-        nSubsidy = 0.0666666  * COIN; // Total Coins mined 20k
+        nSubsidy = 0.0066  * COIN; // Total Coins mined 20k
     	}
 
         else if(pindexBest->nHeight+1 >= 10000001)
@@ -2663,7 +2659,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("diminutive-loadblk");
+    RenameThread("diminutivevault-loadblk");
 
     CImportingNow imp;
 

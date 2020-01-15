@@ -4,7 +4,7 @@ Authors: Sanjay Ghemawat (sanjay@google.com) and Jeff Dean (jeff@google.com)
 The code under this directory implements a system for maintaining a
 persistent key/value store.
 
-See doc/index.html for more expdiminutivetion.
+See doc/index.html for more expdiminutivevaulttion.
 See doc/impl.html for a brief overview of the implementation.
 
 The public interface is in include/*.h.  Callers should not include or

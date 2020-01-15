@@ -83,8 +83,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     resize(850+95, 550);
     setWindowTitle(tr("Diminutive") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
-    qApp->setWindowIcon(QIcon(":icons/diminutive"));
-    setWindowIcon(QIcon(":icons/diminutive"));
+    qApp->setWindowIcon(QIcon(":icons/diminutivevault"));
+    setWindowIcon(QIcon(":icons/diminutivevault"));
 #else
     //setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
@@ -274,7 +274,7 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/diminutive"), tr("&About Diminutive"), this);
+    aboutAction = new QAction(QIcon(":/icons/diminutivevault"), tr("&About Diminutive"), this);
     aboutAction->setToolTip(tr("Show information about Diminutive"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -283,7 +283,7 @@ void BitcoinGUI::createActions()
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
     optionsAction->setToolTip(tr("Modify configuration options for Diminutive"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
-    toggleHideAction = new QAction(QIcon(":/icons/diminutive"), tr("&Show / Hide"), this);
+    toggleHideAction = new QAction(QIcon(":/icons/diminutivevault"), tr("&Show / Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
     encryptWalletAction->setToolTip(tr("Encrypt or decrypt wallet"));
     backupWalletAction = new QAction(QIcon(":/icons/filesave"), tr("&Backup Wallet..."), this);

@@ -971,7 +971,7 @@ void ThreadMapPort()
     const char * multicastif = 0;
     const char * minissdpdpath = 0;
     struct UPNPDev * devlist = 0;
-    char diminutiveddr[64];
+    char diminutivevaultddr[64];
 
 #ifndef UPNPDISCOVER_SUCCESS
     /* miniupnpc 1.5 */
@@ -990,7 +990,7 @@ void ThreadMapPort()
     struct IGDdatas data;
     int r;
 
-    r = UPNP_GetValidIGD(devlist, &urls, &data, diminutiveddr, sizeof(diminutiveddr));
+    r = UPNP_GetValidIGD(devlist, &urls, &data, diminutivevaultddr, sizeof(diminutivevaultddr));
     if (r == 1)
     {
         if (fDiscover) {
@@ -1017,16 +1017,16 @@ void ThreadMapPort()
 #ifndef UPNPDISCOVER_SUCCESS
                 /* miniupnpc 1.5 */
                 r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
-                                    port.c_str(), port.c_str(), diminutiveddr, strDesc.c_str(), "TCP", 0);
+                                    port.c_str(), port.c_str(), diminutivevaultddr, strDesc.c_str(), "TCP", 0);
 #else
                 /* miniupnpc 1.6 */
                 r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
-                                    port.c_str(), port.c_str(), diminutiveddr, strDesc.c_str(), "TCP", 0, "0");
+                                    port.c_str(), port.c_str(), diminutivevaultddr, strDesc.c_str(), "TCP", 0, "0");
 #endif
 
                 if(r!=UPNPCOMMAND_SUCCESS)
                     LogPrintf("AddPortMapping(%s, %s, %s) failed with code %d (%s)\n",
-                        port, port, diminutiveddr, r, strupnperror(r));
+                        port, port, diminutivevaultddr, r, strupnperror(r));
                 else
                     LogPrintf("UPnP Port Mapping successful.\n");;
 

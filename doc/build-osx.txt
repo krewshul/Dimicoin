@@ -7,7 +7,7 @@ software written by Eric Young (eay@cryptsoft.com) and UPnP software written by
 Thomas Bernard.
 
 
-Mac OS X diminutived build instructions
+Mac OS X diminutivevaultd build instructions
 Laszlo Hanyecz <solar@heliacal.net>
 Douglas Huff <dhuff@jrbobdobbs.org>
 
@@ -27,7 +27,7 @@ but you can get the current version from http://developer.apple.com
 
 1.  Clone the github tree to get the source code:
 
-git clone https://github.com/rat4/diminutive.git diminutive
+git clone https://github.com/rat4/diminutivevault.git diminutivevault
 
 2.  Download and install MacPorts from http://www.macports.org/
 
@@ -41,14 +41,14 @@ sudo port install boost db48 openssl miniupnpc
 Optionally install qrencode (and set USE_QRCODE=1):
 sudo port install qrencode
 
-4.  Now you should be able to build diminutived:
+4.  Now you should be able to build diminutivevaultd:
 
-cd diminutive/src
+cd diminutivevault/src
 make -f makefile.osx
 
 Run:
-  ./diminutived --help  # for a list of command-line options.
+  ./diminutivevaultd --help  # for a list of command-line options.
 Run
-  ./diminutived -daemon # to start the diminutive daemon.
+  ./diminutivevaultd -daemon # to start the diminutivevault daemon.
 Run
-  ./diminutived help # When the daemon is running, to get a list of RPC commands
+  ./diminutivevaultd help # When the daemon is running, to get a list of RPC commands

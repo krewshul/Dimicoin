@@ -15,7 +15,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QLabel" name="labelExpdiminutivetion">
+    <widget class="QLabel" name="labelExpdiminutivevaulttion">
      <property name="text">
       <string>These are your Diminutive addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</string>
      </property>

@@ -19,7 +19,7 @@ a BlockHandle and contains the following information:
   offset:	    varint64
   size:		    varint64
 See https://developers.google.com/protocol-buffers/docs/encoding#varints
-for an expdiminutivetion of varint64 format.
+for an expdiminutivevaulttion of varint64 format.
 
 (1) The sequence of key/value pairs in the file are stored in sorted
 order and partitioned into a sequence of data blocks.  These blocks

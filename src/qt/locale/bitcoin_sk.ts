@@ -1403,7 +1403,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start diminutive: click-to-pay handler</source>
+        <source>Cannot start diminutivevault: click-to-pay handler</source>
         <translation>Diminutive sa nedá spustiť: click-to-pay handler</translation>
     </message>
 </context>
@@ -2674,8 +2674,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or diminutived</source>
-        <translation>Pošli príkaz na -server alebo diminutived</translation>
+        <source>Send command to -server or diminutivevaultd</source>
+        <translation>Pošli príkaz na -server alebo diminutivevaultd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2694,13 +2694,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: diminutive.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: diminutive.conf)</translation>
+        <source>Specify configuration file (default: diminutivevault.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: diminutivevault.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: diminutived.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: diminutived.pid)</translation>
+        <source>Specify pid file (default: diminutivevaultd.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: diminutivevaultd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2717,7 +2717,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2728,7 +2728,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Diminutive Alert&quot; admin@f
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
 Doporučuje sa použiť nasledovné náhodne heslo:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (toto heslo si nemusíte pamätať)
 Užívateľské meno a heslo NESMIE byť rovnaké.

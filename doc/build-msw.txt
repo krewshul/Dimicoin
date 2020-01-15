@@ -79,6 +79,6 @@ cp *.h miniupnpc/
 Diminutive
 -------
 DOS prompt:
-cd \diminutive\src
+cd \diminutivevault\src
 mingw32-make -f makefile.mingw
-strip diminutived.exe
+strip diminutivevaultd.exe

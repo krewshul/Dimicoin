@@ -1399,7 +1399,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start diminutive: click-to-pay handler</source>
+        <source>Cannot start diminutivevault: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2670,8 +2670,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or diminutived</source>
-        <translation>Trimite comanda catre server sau diminutived</translation>
+        <source>Send command to -server or diminutivevaultd</source>
+        <translation>Trimite comanda catre server sau diminutivevaultd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2690,13 +2690,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: diminutive.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: diminutive.conf)</translation>
+        <source>Specify configuration file (default: diminutivevault.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: diminutivevault.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: diminutived.pid)</source>
-        <translation>Speficica fisier pid(implicit: diminutive.pid)</translation>
+        <source>Specify pid file (default: diminutivevaultd.pid)</source>
+        <translation>Speficica fisier pid(implicit: diminutivevault.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2713,7 +2713,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

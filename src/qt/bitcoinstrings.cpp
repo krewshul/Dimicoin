@@ -10,7 +10,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "%s, you must set a rpcpassword in the configuration file:\n"
 "%s\n"
 "It is recommended you use the following random password:\n"
-"rpcuser=diminutiverpc\n"
+"rpcuser=diminutivevaultrpc\n"
 "rpcpassword=%s\n"
 "(you do not need to remember this password)\n"
 "The username and password MUST NOT be the same.\n"
@@ -29,8 +29,8 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "your clock is wrong Diminutive will not work properly."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Options:"),
 QT_TRANSLATE_NOOP("bitcoin-core", "This help message"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Specify configuration file (default: diminutive.conf)"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Specify pid file (default: diminutived.pid)"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Specify configuration file (default: diminutivevault.conf)"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Specify pid file (default: diminutivevaultd.pid)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify data directory"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify wallet file (within data directory)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Set database cache size in megabytes (default: 25)"),
@@ -170,7 +170,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 QT_TRANSLATE_NOOP("bitcoin-core", "Unable to bind to %s on this computer (bind returned error %d, %s)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Diminutive version"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Usage:"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Send command to -server or diminutived"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Send command to -server or diminutivevaultd"),
 QT_TRANSLATE_NOOP("bitcoin-core", "List commands"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Get help for a command"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""

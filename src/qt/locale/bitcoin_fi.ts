@@ -1404,7 +1404,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start diminutive: click-to-pay handler</source>
+        <source>Cannot start diminutivevault: click-to-pay handler</source>
         <translation>Diminutive-asiakasohjelmaa ei voida käynnistää: klikkaa maksaaksesi-käsittelijä</translation>
     </message>
 </context>
@@ -2675,8 +2675,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or diminutived</source>
-        <translation>Syötä komento kohteeseen -server tai diminutived</translation>
+        <source>Send command to -server or diminutivevaultd</source>
+        <translation>Syötä komento kohteeseen -server tai diminutivevaultd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2695,13 +2695,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: diminutive.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: diminutive.conf)</translation>
+        <source>Specify configuration file (default: diminutivevault.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: diminutivevault.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: diminutived.pid)</source>
-        <translation>Määritä prosessitiedosto (oletus: diminutive.pid)</translation>
+        <source>Specify pid file (default: diminutivevaultd.pid)</source>
+        <translation>Määritä prosessitiedosto (oletus: diminutivevault.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2718,7 +2718,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=diminutiverpc
+rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2728,7 +2728,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Diminutive Alert&quot; admin@f
 </source>
         <translation>%s, sinun on asetettava rpcpassword asetustiedostoon:
 %s
-On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=diminutiverpc
+On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=diminutivevaultrpc
 rpcpassword=%s
 (Sinun ei tarvitse muistaa tätä salasanaa) Käyttäjänimen ja salasanan EI TULE OLLA SAMOJA.
 Jos tiedostoa ei ole olemassa, luo se asettaen samalla omistajan lukuoikeudet.

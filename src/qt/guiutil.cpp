@@ -84,7 +84,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // NovaCoin: check prefix
-    if(uri.scheme() != QString("diminutive"))
+    if(uri.scheme() != QString("diminutivevault"))
         return false;
 
     SendCoinsRecipient rv;
@@ -129,13 +129,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert diminutive:// to diminutive:
+    // Convert diminutivevault:// to diminutivevault:
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("diminutive://"))
+    if(uri.startsWith("diminutivevault://"))
     {
-        uri.replace(0, 12, "diminutive:");
+        uri.replace(0, 12, "diminutivevault:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -361,7 +361,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "diminutive.desktop";
+    return GetAutostartDir() / "diminutivevault.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -426,7 +426,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
     header = tr("Diminutive-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  diminutive-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  diminutivevault-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 

@@ -48,16 +48,16 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xb2;
-        pchMessageStart[1] = 0xe7;
-        pchMessageStart[2] = 0x1a;
-        pchMessageStart[3] = 0x6d;
-        vAlertPubKey = ParseHex("049d754d07e4ebaab5f1a52cec6c376f2bc3d3d0fa997528d2757afac9260aa29dcb60bb274a511477f263c722080794c848df46fcf59d7090e5b4553a2183468f");
-        nDefaultPort = 18550;
-        nRPCPort = 18551;
+        pchMessageStart[0] = 0x1e;
+        pchMessageStart[1] = 0x3a;
+        pchMessageStart[2] = 0x5a;
+        pchMessageStart[3] = 0x3e;
+        vAlertPubKey = ParseHex("0411c44368209451f52bf7f6c21e7c665ba508ffe7da0246d4e6e11355b9826f5d0c49b6293253ada51913a64d5b382c764bbf3ddbd21149535254a5c5c21fac98");
+        nDefaultPort = 19550;
+        nRPCPort = 19551;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
 
-        const char* pszTimestamp = "THE BIRTH OFF DIMINUTIVE COIN 20191223";
+        const char* pszTimestamp = "THE BIRTH OFF DIMINUTIVE COIN 20191223 V2";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -74,22 +74,18 @@ public:
         genesis.nNonce   = 30362;
 
         hashGenesisBlock = genesis.GetHash();
-
-        assert(hashGenesisBlock == uint256("0x61220f0732fec7c775b856c22aa59865dcf369533734f12364d4c9554fb85c77"));
-        assert(genesis.hashMerkleRoot == uint256("0xb43068be1eb55051040ef038defaaecf59ae6ef2f2624961b5fb5b7973e209f7"));
-
-
+        assert(hashGenesisBlock == uint256("0x7a7f5f5dc0d9f5d063f1a8a2a3a39ae20e02a2f3cb9359947ed7701da78e93cc"));
+        assert(genesis.hashMerkleRoot == uint256("0x2af9f58a5b6f496b76c595ae6aca24d6faf24ed420ed339d37f9885a7b9f944d"));
 
         vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));   // Connection Main 1 
 	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));    // Connection Main 2
+	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","167.86.94.93"));    // Connection Main 3
 	
-
-
-       base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 31);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, 181);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x1A)(0x22)(0xAB)(0x5D).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3E)(0x27)(0xBA)(0xD5).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x1D)(0x12)(0xED)(0xAD).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3A)(0xA7)(0x1A)(0xC5).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -124,7 +120,7 @@ public:
         pchMessageStart[2] = 0x3d;
         pchMessageStart[3] = 0x5f;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
-        vAlertPubKey = ParseHex("044f5f2b6f089f344e914721a0b986d095e436c06535e2a83604feb0e3bb892fe64884a98fdb73178b7aa73e44c1401428d54c9a4c34d1001bc6c27d488f19b6c4");
+        vAlertPubKey = ParseHex("042568b05393011eaa32d1d47dabc8a0ab759425050e1e3a73d7c6e11a23148e52c034745592ff887fb48ef2a7e0c18b037e77c603d68d7246520c420850e3a0df");
         nDefaultPort = 18550;
         nRPCPort = 18551;
         strDataDir = "testnet";
@@ -135,10 +131,8 @@ public:
         genesis.nTime = 1462595940;
 
         hashGenesisBlock = genesis.GetHash();
-      
 
-
-assert(hashGenesisBlock == uint256("0x5a31658bcca40965f5381cea7b8211df68d862c5e0b727b9799b3bd79d564e17"));
+assert(hashGenesisBlock == uint256("0x70d16296e34fdf26d1c33d299b060f63cf5722ad2f9efc608ad259d583c24b06"));
 
  vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));   // Connection Main 1 
 	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));    // Connection Main 2
@@ -176,11 +170,12 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
+
         nDefaultPort = 28500;
         strDataDir = "regtest";
 
 
-        assert(hashGenesisBlock == uint256("0xf80042183e02437cf0b74ed7a39ed72aae02293a655c7a72b7f0fc2269cc8464"));
+        assert(hashGenesisBlock == uint256("0x9a681b2d64b7c7ad2c2af4862b9bf2f02314feef2ddda555fd3fc2a38fc1a257"));
 
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.

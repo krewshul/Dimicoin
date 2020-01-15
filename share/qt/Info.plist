@@ -13,17 +13,17 @@
 	<key>CFBundleExecutable</key>
 	<string>Diminutive-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.diminutive.Diminutive-Qt</string>
+	<string>co.diminutivevault.Diminutive-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.diminutive.DiminutivePayment</string>
+            <string>co.diminutivevault.DiminutivePayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>diminutive</string>
+              <string>diminutivevault</string>
             </array>
           </dict>
         </array>
