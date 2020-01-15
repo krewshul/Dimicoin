@@ -81,8 +81,8 @@ public:
 	vSeeds.push_back(CDNSSeedData("seed2.dimi.net","51.38.71.12"));    // Connection Main 2
 	vSeeds.push_back(CDNSSeedData("seed3.dimi.net","167.86.94.93"));    // Connection Main 3
 	
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 31);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 29);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 32);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, 181);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x1D)(0x12)(0xED)(0xAD).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3A)(0xA7)(0x1A)(0xC5).convert_to_container<std::vector<unsigned char> >();
