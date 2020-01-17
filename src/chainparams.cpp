@@ -74,15 +74,15 @@ public:
         genesis.nNonce   = 30362;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x7a7f5f5dc0d9f5d063f1a8a2a3a39ae20e02a2f3cb9359947ed7701da78e93cc"));
-        assert(genesis.hashMerkleRoot == uint256("0x2af9f58a5b6f496b76c595ae6aca24d6faf24ed420ed339d37f9885a7b9f944d"));
+        assert(hashGenesisBlock == uint256("0xf94a9208c76c9b74154b5342c9f0060982580fede1f6eb53741b1a33b70c8ddc"));
+        assert(genesis.hashMerkleRoot == uint256("0xfddb73a7191af2c2ff18010f4548936ddab8ed2783023ff57ac9ad9157448b60"));
 
         vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));   // Connection Main 1 
 	vSeeds.push_back(CDNSSeedData("seed2.dimi.net","51.38.71.12"));    // Connection Main 2
 	vSeeds.push_back(CDNSSeedData("seed3.dimi.net","167.86.94.93"));    // Connection Main 3
 	
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 31);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 29);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 32);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1, 181);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x1D)(0x12)(0xED)(0xAD).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3A)(0xA7)(0x1A)(0xC5).convert_to_container<std::vector<unsigned char> >();
@@ -132,7 +132,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-assert(hashGenesisBlock == uint256("0x70d16296e34fdf26d1c33d299b060f63cf5722ad2f9efc608ad259d583c24b06"));
+assert(hashGenesisBlock == uint256("0x681254110287a55db5d6999929f0f133c9dcb9beae9b03193eee8797563732ff"));
 
  vSeeds.push_back(CDNSSeedData("seed1.dimi.net","51.75.162.95"));   // Connection Main 1 
 	vSeeds.push_back(CDNSSeedData("seed5.dimi.net","51.38.71.12"));    // Connection Main 2
@@ -175,7 +175,7 @@ public:
         strDataDir = "regtest";
 
 
-        assert(hashGenesisBlock == uint256("0x9a681b2d64b7c7ad2c2af4862b9bf2f02314feef2ddda555fd3fc2a38fc1a257"));
+        assert(hashGenesisBlock == uint256("0xd9362b559fdddc8fa24134d881bcde807e14b05091a803d888182b6a03db4594"));
 
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
