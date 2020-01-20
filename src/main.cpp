@@ -41,7 +41,7 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 48);
 
-unsigned int nStakeMinAge = 1 * 60 * 60 * 24; // 1 Day stake
+unsigned int nStakeMinAge = 60 * 60; // 1 hour stake
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 95;
