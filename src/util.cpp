@@ -1043,7 +1043,6 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                fprintf(ConfFile, "maxconnections=250\n");
                fprintf(ConfFile, "rpcconnect=127.0.0.1\n");
                fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
-	       fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
 	       fprintf(ConfFile, "#addnode=\n");
 
                fclose(ConfFile);
