@@ -31,7 +31,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 # Windows begin
 #BOOST_LIB_SUFFIX=-mgw49-mt-s-1_57
 # BOOST_THREAD_LIB_SUFFIX = $$BOOST_LIB_SUFFIX
-#BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
+# BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
 # BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
 # BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 # BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
@@ -39,7 +39,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 # OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
 # MINIUPNPC_INCLUDE_PATH=C:/deps/
 # MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-# QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
+ #QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
 # QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
 # Windows end
 

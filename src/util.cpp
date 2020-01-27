@@ -1042,20 +1042,9 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                fprintf(ConfFile, "listen=1\n");
                fprintf(ConfFile, "server=1\n");
                fprintf(ConfFile, "maxconnections=250\n");
-               fprintf(ConfFile, "rpcuser=yourusername\n");
-
-               char s[33];
-               for (int i = 0; i < 33; ++i)
-               {
-                   s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
-               }
-
-               std::string str(s);
-               std::string rpcpass = "rpcpassword=" + str + "\n";
-               fprintf(ConfFile, rpcpass.c_str());
-               fprintf(ConfFile, "port=15798\n");
-               fprintf(ConfFile, "rpcport=15799\n");
                fprintf(ConfFile, "rpcconnect=127.0.0.1\n");
+			   fprintf(ConfFile, "addnode=51.38.71.12\n");
+			   fprintf(ConfFile, "addnode=51.75.162.95\n");
                fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
 
                fclose(ConfFile);
