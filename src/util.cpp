@@ -1039,13 +1039,12 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
         boost::filesystem::path ConfPath;
                ConfPath = GetDataDir() / "diminutivevaultcoin.conf";
                FILE* ConfFile = fopen(ConfPath.string().c_str(), "w");
-               fprintf(ConfFile, "listen=1\n");
                fprintf(ConfFile, "server=1\n");
                fprintf(ConfFile, "maxconnections=250\n");
                fprintf(ConfFile, "rpcconnect=127.0.0.1\n");
-			   fprintf(ConfFile, "addnode=51.38.71.12\n");
-			   fprintf(ConfFile, "addnode=51.75.162.95\n");
                fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
+	       fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
+	       fprintf(ConfFile, "#addnode=\n");
 
                fclose(ConfFile);
 
