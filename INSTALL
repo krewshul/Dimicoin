@@ -1,0 +1,9 @@
+Building DiminutiveVaultCoin
+
+See doc/readme-qt.rst for instructions on building DiminutiveVaultCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of DiminutiveVaultCoin.
+
+See doc/build-*.txt for instructions on building diminutivevaultcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of DiminutiveVaultCoin.
