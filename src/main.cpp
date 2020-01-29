@@ -959,7 +959,7 @@ int64_t GetProofOfWorkReward(int64_t nFees, int nHeight)
     {
         nSubsidy = 11000 * COIN;
     }
-    	else if((nHeight > 12) && (nHeight == 2))
+    	else if((nHeight > 12) && (nHeight % 2))
     {
     	nSubsidy = 0.04 * COIN;
     }
@@ -989,13 +989,13 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
 {
     int64_t nSubsidy= 0 * COIN;
     
-    if(IsVaultPOS(nHeight)) //Even blocks rewards 0.01 DIMI curve up and down 0.00004 DIMI 
+    if(IsVaultPOS(nHeight)) //Even blocks rewards 0.01 DIMI curve up and down 0.00001 DIMI 
    
 	if(nHeight == 3)
     {
         nSubsidy = 0 * COIN;
     }
-    	else if((nHeight > 12) && (nHeight == 2))
+    	else if((nHeight > 12) && (nHeight % 2))
     {
     	nSubsidy = 0.00001 * COIN;
     }
