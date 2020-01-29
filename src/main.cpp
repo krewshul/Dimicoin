@@ -42,7 +42,7 @@ CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
 int nCoinbaseMaturity = 75;// Blocks to confirm if mining pow pos
 int nStakeMinConfirmations =  150; // 150 Minimum Block confirms 
-unsigned int nStakeMinAge =  2 * 60 * 60; // 1min Adjust hours
+unsigned int nStakeMinAge =  2 * 60 * 60; // 2 Hour Minimum Stake 
 unsigned int nModifierInterval = 5 * 60; // time to elapse before new modifier is computed
 
 CBlockIndex* pindexGenesisBlock = NULL;
