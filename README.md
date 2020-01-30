@@ -26,3 +26,4 @@
 ## even 0.0001
 ## odd 0.01
 ## Halving 1 000 000 BLOCKS
+# Total Coins produced 200 000
