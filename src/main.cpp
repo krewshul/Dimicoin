@@ -991,19 +991,23 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
     
     if(IsVaultPOS(nHeight)) //Even blocks rewards 0.01 DIMI curve up and down 0.00001 DIMI 
    
-	if(nHeight == 3)
-    {
-        nSubsidy = 0 * COIN;
-    }
-    	else if((nHeight > 12) && (nHeight % 2))
-    {
-    	nSubsidy = 0.00001 * COIN;
-    }
+{
+    	if(nHeight % 2)
+    	{
+        	nSubsidy = 0.00001 * COIN;
+    	}
+    	else
+    	{
+        	nSubsidy = 0.01 * COIN;
+    	}
+    	
+	}
 	
-        else if(nHeight > 12)
-    {
-    	nSubsidy = 0.01 * COIN;
+	else
+	{
+		nSubsidy = 0.01 * COIN;
     }
+
     nSubsidy >>= (nHeight / 1000000);
     LogPrint("creation", "GetProofOfStakeReward(): create=%s nCoinAge=%d nHeight=%d\n", FormatMoney(nSubsidy), nCoinAge, nHeight);
 
