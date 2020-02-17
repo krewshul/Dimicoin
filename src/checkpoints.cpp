@@ -40,7 +40,14 @@ namespace Checkpoints
          ( 5000,      uint256("0x00000000515969771ce4f3dc665b30ccef5bd4528c51353aee471b2ea8e07877") )
          ( 5500,      uint256("0x000000000d5871b1c90c086ecfa5764a2cadd0ba561480b2fdbbe33ae117d76d") )
          ( 6000,      uint256("0x00000000438a554c32ea6a1def43be2edc0d335d482cecd3646f129381f96f12") )
-         ( 6500,      uint256("0x0000000008aaf279a144c9fe085f76046eae800fe49e7743ef477cc1dea55946") )
+         ( 6500,      uint256("0x0000000008aaf279a144c9fe085f76046eae800fe49e7743ef477cc1dea55946") ) //version 1002 Update
+         ( 10000,      uint256("0x000000002c72a8a2b93e70d3a4aab03fd6b965fbac55e5dedd36ee14c24a9b8e") ) 
+         ( 15000,      uint256("0x00000000221baa3fb004ecb3411cb4d0425dc167d6fc5f51e87a16e7d50bea37") ) 
+         ( 16000,      uint256("0x000000001d9e894537c321cae49c9d652c0d5996ee8e74052f7a3e53c0c276dd") ) 
+         ( 17000,      uint256("0x000000000f6eab27036fdc77d9a520f0df44737ab0d77e6ef469d9a076233b68") ) 
+         ( 18000,      uint256("0x000000003edc980bd0d61b59eaf483e2d1fcf83bf04ed4df4aa63e848064daeb") ) 
+         ( 20000,      uint256("0xd75b1c9bbae68bc5f1a556b82b851651a2bbd3701c0516bb6f4a34ae37425cc8") ) // Vevsion 1003 Update
+
          ;
 
     // TestNet has no checkpoints
