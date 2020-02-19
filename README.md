@@ -1,4 +1,4 @@
-![image](https://i.imgur.com/W6ozZUj.png)
+![image](https://i.imgur.com/FqZU0oy.png)
 # Diminutivecoin
 
 ## Coin Name : Diminutive coin
