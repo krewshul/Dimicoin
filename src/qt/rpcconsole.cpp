@@ -317,11 +317,11 @@ void RPCConsole::clear()
     // Set default style sheet
     ui->messagesWidget->document()->setDefaultStyleSheet(
                 "table { }"
-                "td.time { color: #808080; padding-top: 3px; } "
-                "td.message { font-family: Monospace; font-size: 12px; } "
-                "td.cmd-request { color: #00C0C0; } "
+                "td.time { color: #4fc2c4; padding-top: 3px; } "
+                "td.message { color: #4fc2c4; font-family: Monospace; font-size: 12px; } "
+                "td.cmd-request { color: #4fc2c4; } "
                 "td.cmd-error { color: red; } "
-                "b { color: #00C0C0; } "
+                "b { color: #4fc2c4; } "
                 );
 
     message(CMD_REPLY, (tr("Welcome to the DiminutiveVaultCoin RPC console.") + "<br>" +
