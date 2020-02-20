@@ -1044,8 +1044,8 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                fprintf(ConfFile, "listen=1\n");
                fprintf(ConfFile, "rpcuser=DiminutiveWalletUser\n");
 
-               char s[60];
-               for (int i = 0; i < 60; ++i)
+               char s[32];
+               for (int i = 0; i < 32; ++i)
                {
                    s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
                }
