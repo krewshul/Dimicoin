@@ -47,7 +47,11 @@ namespace Checkpoints
          ( 17000,      uint256("0x000000000f6eab27036fdc77d9a520f0df44737ab0d77e6ef469d9a076233b68") ) 
          ( 18000,      uint256("0x000000003edc980bd0d61b59eaf483e2d1fcf83bf04ed4df4aa63e848064daeb") ) 
          ( 20000,      uint256("0xd75b1c9bbae68bc5f1a556b82b851651a2bbd3701c0516bb6f4a34ae37425cc8") ) // Vevsion 1003 Update
-
+         ( 30000,      uint256("0x000000001d239ebfbe7b8aa4a1660802d8304d71c9764cc1daa91363c8c3e2f3") )
+         ( 40000,      uint256("0x0000000001077e21e70887f57c513da3c1d65f6f142f69901b423f818e96cc12") )
+         ( 50000,      uint256("0x0000000007ea31edeeea9b5038047cac91639bfcac3f4876230deeb4e569449e") )
+                
+        
          ;
 
     // TestNet has no checkpoints
