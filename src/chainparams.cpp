@@ -54,6 +54,9 @@ public:
         pchMessageStart[3] = 0x56;
         nDefaultPort = 16000;
         nRPCPort = 16001;
+        //nDefaultPort = 16000;
+       // nRPCPort = 16001;	    
+	    
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
 	const char* pszTimestamp = "Diminitivevault needs a new chain sha256 failed 20200121"; //
         std::vector<CTxIn> vin;
@@ -125,6 +128,8 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 8);
         nDefaultPort = 1600;
         nRPCPort = 1601;
+	//nDefaultPort = 1600;
+        //nRPCPort = 1601;
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
