@@ -52,8 +52,8 @@ public:
         pchMessageStart[1] = 0x1a;
         pchMessageStart[2] = 0x2e;
         pchMessageStart[3] = 0x56;
-        nDefaultPort = 16000;
-        nRPCPort = 16001;
+        nDefaultPort = 49139;
+        nRPCPort = 49122;
         //nDefaultPort = 16000;
        // nRPCPort = 16001;	    
 	    
@@ -126,8 +126,8 @@ public:
         pchMessageStart[2] = 0xd5;
         pchMessageStart[3] = 0x21;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 8);
-        nDefaultPort = 1600;
-        nRPCPort = 1601;
+        nDefaultPort = 4913;
+        nRPCPort = 4912;
 	//nDefaultPort = 1600;
         //nRPCPort = 1601;
         strDataDir = "testnet";
