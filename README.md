@@ -8,8 +8,8 @@
 ## Blocktime : 75 Sec
 ## Drift Time : 10 Minutes
 ## Address letter: D / E
-## Rpc Port : 16000 
-## P2p Port : 16001
+## Rpc Port : 49139 
+## P2p Port : 49122
 ## Minimum Stake confirms 150
 ## Minimum Stake age : 2 Hours 
 ## Retarget : 750 seconds
