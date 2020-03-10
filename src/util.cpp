@@ -1049,16 +1049,17 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                    s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
                }
 
-std::string str(s);
-std::string rpcpass = "rpcpassword=" + str + "\n";
-fprintf(ConfFile, rpcpass.c_str());
-fprintf(ConfFile, "#addnode= list was created 2020 03 05 - Add your own \n");
-fprintf(ConfFile, "addnode=51.38.71.12\n");   
-fprintf(ConfFile, "addnode=51.75.162.95\n"); 
-fprintf(ConfFile, "addnode=86.7.19.14\n");
-fprintf(ConfFile, "addnode=92.38.140.8\n");
-fprintf(ConfFile, "addnode=50.245.85.75\n");
-
+                std::string str(s);
+                std::string rpcpass = "rpcpassword=" + str + "\n";
+                fprintf(ConfFile, rpcpass.c_str());
+                fprintf(ConfFile, "#addnode= list was created 2020 03 05 - Add your own \n");
+                    fprintf(ConfFile, "addnode=51.38.71.12\n");   
+                    fprintf(ConfFile, "addnode=51.75.162.95\n"); 
+                    fprintf(ConfFile, "addnode=86.7.19.14\n");
+                    fprintf(ConfFile, "addnode=92.38.140.8\n");
+                    fprintf(ConfFile, "addnode=50.245.85.75\n");
+                    fprintf(ConfFile, "port=49139\n");
+                    fprintf(ConfFile, "rpcport=49122\n");
                fclose(ConfFile);
 
                // Returns our config path, created config file is NOT loaded first time...
