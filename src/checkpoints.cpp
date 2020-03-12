@@ -50,7 +50,11 @@ namespace Checkpoints
          ( 30000,      uint256("0x000000001d239ebfbe7b8aa4a1660802d8304d71c9764cc1daa91363c8c3e2f3") )
          ( 40000,      uint256("0x0000000001077e21e70887f57c513da3c1d65f6f142f69901b423f818e96cc12") )
          ( 50000,      uint256("0x0000000007ea31edeeea9b5038047cac91639bfcac3f4876230deeb4e569449e") ) // Vevsion 1004 Update
-                
+	     ( 55000,      uint256("0x0000000005844f45cbd69d58ddc6c79b35c20e9d2744c8389bfb294b9044c8dc") ) 
+	     ( 60000,      uint256("0x6a8c27c05002226728add403045a74a8ab3c4a0c17377c2a50b86a378838881c") ) 
+	     ( 65000,      uint256("0x00000000395f46afe65c9f867cd5cc6614e690a942b09b432358768e63bc3b5e") ) 
+	     ( 70000,      uint256("0x0000000017fbe9308331990e0be183ecf253f6261f4ed19fee37e609c7f733a9") ) // Vevsion 1005 Update
+            
         
          ;
 
