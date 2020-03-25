@@ -1057,7 +1057,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                     fprintf(ConfFile, "addnode=51.75.162.95\n"); 
                     fprintf(ConfFile, "addnode=86.7.19.14\n");
                     fprintf(ConfFile, "addnode=92.38.140.8\n");
-                    fprintf(ConfFile, "addnode=50.245.85.75\n");
+                   // fprintf(ConfFile, "addnode=50.245.85.75\n"); Oh man Krewshul you absolute special muffin 
                     fprintf(ConfFile, "port=49139\n");
                     fprintf(ConfFile, "rpcport=49122\n");
                fclose(ConfFile);
